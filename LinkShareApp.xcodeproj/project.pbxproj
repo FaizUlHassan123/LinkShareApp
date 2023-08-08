@@ -85,8 +85,8 @@
 		22D2507A2A82380B00E1267B /* LinkShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkShareExtension.entitlements; sourceTree = "<group>"; };
 		22D250872A8243A700E1267B /* ShareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
 		22D250892A82467900E1267B /* ShareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
-		22D2508C2A8270C200E1267B /* instagram.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = instagram.MP4; sourceTree = "<group>"; };
-		22D2508D2A8270C200E1267B /* Facebook.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Facebook.MP4; sourceTree = "<group>"; };
+		22D2508C2A8270C200E1267B /* instagram.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = instagram.mp4; sourceTree = "<group>"; };
+		22D2508D2A8270C200E1267B /* Facebook.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Facebook.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +202,8 @@
 		22D2508B2A8270B400E1267B /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				22D2508D2A8270C200E1267B /* Facebook.MP4 */,
-				22D2508C2A8270C200E1267B /* instagram.MP4 */,
+				22D2508D2A8270C200E1267B /* Facebook.mp4 */,
+				22D2508C2A8270C200E1267B /* instagram.mp4 */,
 			);
 			path = Video;
 			sourceTree = "<group>";
