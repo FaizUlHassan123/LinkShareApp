@@ -61,17 +61,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 var imageArray: [CellModel] = []
                 
                 for (_, imageData) in sharedArray.enumerated() {
-                    if let imageKey = imageData.key as? String, imageKey == "image", let a = imageData.value as? Data {
+                    let key = imageData.key
+                    if key == "image", let a = imageData.value as? Data {
                         let model = CellModel(image: UIImage(data: a))
                         imageArray.append(model)
-                    } else if let urlKey = imageData.key as? String, urlKey == "URL", let urlString = imageData.value as? String, let url = URL(string: urlString) {
+                    } else if key == "URL", let urlString = imageData.value as? String, let url = URL(string: urlString) {
                         let model = CellModel(url: url)
                         imageArray.append(model)
                     }
                 }
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let homeVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                let homeVC = MainViewController.instantiateVC()
                 homeVC.cellItems = imageArray
                 
                 let navVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController

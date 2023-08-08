@@ -16,6 +16,13 @@ class MainViewController: UIViewController {
     
     var cellItems: [CellModel] = []
     
+    
+    static func instantiateVC()-> MainViewController{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let homeVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else{fatalError("Main VIew Controller not Found")}
+        return homeVC
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imgCollectionView.isHidden = true
