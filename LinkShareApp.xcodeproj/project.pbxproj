@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		22D250372A822F9600E1267B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250362A822F9600E1267B /* AppDelegate.swift */; };
 		22D250392A822F9600E1267B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250382A822F9600E1267B /* SceneDelegate.swift */; };
-		22D2503B2A822F9600E1267B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2503A2A822F9600E1267B /* ViewController.swift */; };
+		22D2503B2A822F9600E1267B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2503A2A822F9600E1267B /* MainViewController.swift */; };
 		22D2503E2A822F9600E1267B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D2503C2A822F9600E1267B /* Main.storyboard */; };
 		22D250402A822F9700E1267B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D2503F2A822F9700E1267B /* Assets.xcassets */; };
 		22D250432A822F9700E1267B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D250412A822F9700E1267B /* LaunchScreen.storyboard */; };
 		22D2504E2A822F9800E1267B /* LinkShareAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2504D2A822F9800E1267B /* LinkShareAppTests.swift */; };
 		22D250582A822F9800E1267B /* LinkShareAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250572A822F9800E1267B /* LinkShareAppUITests.swift */; };
 		22D2505A2A822F9800E1267B /* LinkShareAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250592A822F9800E1267B /* LinkShareAppUITestsLaunchTests.swift */; };
+		22D2506D2A8235EE00E1267B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2506C2A8235EE00E1267B /* ShareViewController.swift */; };
+		22D250702A8235EE00E1267B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D2506E2A8235EE00E1267B /* MainInterface.storyboard */; };
+		22D250742A8235EE00E1267B /* LinkShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 22D2506A2A8235EE00E1267B /* LinkShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22D250832A823B1500E1267B /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 22D250822A823B1500E1267B /* Toast */; };
+		22D250862A823B5500E1267B /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 22D250852A823B5500E1267B /* Toast */; };
+		22D250882A8243A700E1267B /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250872A8243A700E1267B /* ShareCell.swift */; };
+		22D2508A2A82467900E1267B /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D250892A82467900E1267B /* ShareCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +40,34 @@
 			remoteGlobalIDString = 22D250322A822F9600E1267B;
 			remoteInfo = LinkShareApp;
 		};
+		22D250722A8235EE00E1267B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D2502B2A822F9600E1267B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D250692A8235EE00E1267B;
+			remoteInfo = LinkShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22D250782A8235EE00E1267B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22D250742A8235EE00E1267B /* LinkShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22D250332A822F9600E1267B /* LinkShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D250362A822F9600E1267B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22D250382A822F9600E1267B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22D2503A2A822F9600E1267B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D2503A2A822F9600E1267B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22D2503D2A822F9600E1267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22D2503F2A822F9700E1267B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D250422A822F9700E1267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +77,16 @@
 		22D250532A822F9800E1267B /* LinkShareAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkShareAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D250572A822F9800E1267B /* LinkShareAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkShareAppUITests.swift; sourceTree = "<group>"; };
 		22D250592A822F9800E1267B /* LinkShareAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkShareAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22D2506A2A8235EE00E1267B /* LinkShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinkShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D2506C2A8235EE00E1267B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		22D2506F2A8235EE00E1267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		22D250712A8235EE00E1267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D250792A8237E500E1267B /* LinkShareApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkShareApp.entitlements; sourceTree = "<group>"; };
+		22D2507A2A82380B00E1267B /* LinkShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkShareExtension.entitlements; sourceTree = "<group>"; };
+		22D250872A8243A700E1267B /* ShareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
+		22D250892A82467900E1267B /* ShareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
+		22D2508C2A8270C200E1267B /* instagram.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = instagram.MP4; sourceTree = "<group>"; };
+		22D2508D2A8270C200E1267B /* Facebook.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Facebook.MP4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D250832A823B1500E1267B /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,16 +112,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22D250672A8235EE00E1267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D250862A823B5500E1267B /* Toast in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		22D2502A2A822F9600E1267B = {
 			isa = PBXGroup;
 			children = (
+				22D2508B2A8270B400E1267B /* Video */,
 				22D250352A822F9600E1267B /* LinkShareApp */,
 				22D2504C2A822F9800E1267B /* LinkShareAppTests */,
 				22D250562A822F9800E1267B /* LinkShareAppUITests */,
+				22D2506B2A8235EE00E1267B /* LinkShareExtension */,
 				22D250342A822F9600E1267B /* Products */,
+				22D250842A823B5500E1267B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +142,7 @@
 				22D250332A822F9600E1267B /* LinkShareApp.app */,
 				22D250492A822F9800E1267B /* LinkShareAppTests.xctest */,
 				22D250532A822F9800E1267B /* LinkShareAppUITests.xctest */,
+				22D2506A2A8235EE00E1267B /* LinkShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +150,15 @@
 		22D250352A822F9600E1267B /* LinkShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				22D250792A8237E500E1267B /* LinkShareApp.entitlements */,
 				22D250362A822F9600E1267B /* AppDelegate.swift */,
 				22D250382A822F9600E1267B /* SceneDelegate.swift */,
-				22D2503A2A822F9600E1267B /* ViewController.swift */,
+				22D2503A2A822F9600E1267B /* MainViewController.swift */,
 				22D2503C2A822F9600E1267B /* Main.storyboard */,
 				22D2503F2A822F9700E1267B /* Assets.xcassets */,
 				22D250412A822F9700E1267B /* LaunchScreen.storyboard */,
 				22D250442A822F9700E1267B /* Info.plist */,
+				22D250872A8243A700E1267B /* ShareCell.swift */,
 			);
 			path = LinkShareApp;
 			sourceTree = "<group>";
@@ -127,6 +180,34 @@
 			path = LinkShareAppUITests;
 			sourceTree = "<group>";
 		};
+		22D2506B2A8235EE00E1267B /* LinkShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				22D2507A2A82380B00E1267B /* LinkShareExtension.entitlements */,
+				22D2506C2A8235EE00E1267B /* ShareViewController.swift */,
+				22D250892A82467900E1267B /* ShareCell.swift */,
+				22D2506E2A8235EE00E1267B /* MainInterface.storyboard */,
+				22D250712A8235EE00E1267B /* Info.plist */,
+			);
+			path = LinkShareExtension;
+			sourceTree = "<group>";
+		};
+		22D250842A823B5500E1267B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22D2508B2A8270B400E1267B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				22D2508D2A8270C200E1267B /* Facebook.MP4 */,
+				22D2508C2A8270C200E1267B /* instagram.MP4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +218,17 @@
 				22D2502F2A822F9600E1267B /* Sources */,
 				22D250302A822F9600E1267B /* Frameworks */,
 				22D250312A822F9600E1267B /* Resources */,
+				22D250782A8235EE00E1267B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22D250732A8235EE00E1267B /* PBXTargetDependency */,
 			);
 			name = LinkShareApp;
+			packageProductDependencies = (
+				22D250822A823B1500E1267B /* Toast */,
+			);
 			productName = LinkShareApp;
 			productReference = 22D250332A822F9600E1267B /* LinkShareApp.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +269,26 @@
 			productReference = 22D250532A822F9800E1267B /* LinkShareAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		22D250692A8235EE00E1267B /* LinkShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D250752A8235EE00E1267B /* Build configuration list for PBXNativeTarget "LinkShareExtension" */;
+			buildPhases = (
+				22D250662A8235EE00E1267B /* Sources */,
+				22D250672A8235EE00E1267B /* Frameworks */,
+				22D250682A8235EE00E1267B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkShareExtension;
+			packageProductDependencies = (
+				22D250852A823B5500E1267B /* Toast */,
+			);
+			productName = LinkShareExtension;
+			productReference = 22D2506A2A8235EE00E1267B /* LinkShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +310,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 22D250322A822F9600E1267B;
 					};
+					22D250692A8235EE00E1267B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 22D2502E2A822F9600E1267B /* Build configuration list for PBXProject "LinkShareApp" */;
@@ -215,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 22D2502A2A822F9600E1267B;
+			packageReferences = (
+				22D250812A823B1500E1267B /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 22D250342A822F9600E1267B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +334,7 @@
 				22D250322A822F9600E1267B /* LinkShareApp */,
 				22D250482A822F9800E1267B /* LinkShareAppTests */,
 				22D250522A822F9800E1267B /* LinkShareAppUITests */,
+				22D250692A8235EE00E1267B /* LinkShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +364,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22D250682A8235EE00E1267B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D250702A8235EE00E1267B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,7 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D2503B2A822F9600E1267B /* ViewController.swift in Sources */,
+				22D2503B2A822F9600E1267B /* MainViewController.swift in Sources */,
+				22D250882A8243A700E1267B /* ShareCell.swift in Sources */,
 				22D250372A822F9600E1267B /* AppDelegate.swift in Sources */,
 				22D250392A822F9600E1267B /* SceneDelegate.swift in Sources */,
 			);
@@ -281,6 +403,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22D250662A8235EE00E1267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D2506D2A8235EE00E1267B /* ShareViewController.swift in Sources */,
+				22D2508A2A82467900E1267B /* ShareCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +424,11 @@
 			isa = PBXTargetDependency;
 			target = 22D250322A822F9600E1267B /* LinkShareApp */;
 			targetProxy = 22D250542A822F9800E1267B /* PBXContainerItemProxy */;
+		};
+		22D250732A8235EE00E1267B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D250692A8235EE00E1267B /* LinkShareExtension */;
+			targetProxy = 22D250722A8235EE00E1267B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +447,14 @@
 				22D250422A822F9700E1267B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22D2506E2A8235EE00E1267B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D2506F2A8235EE00E1267B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,15 +577,24 @@
 		22D2505E2A822F9800E1267B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkShareApp/LinkShareApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY583C3M59;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkShareApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,8 +602,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.nowENT.LinkShareApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.sharesheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,15 +614,24 @@
 		22D2505F2A822F9800E1267B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkShareApp/LinkShareApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY583C3M59;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkShareApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,8 +639,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.nowENT.LinkShareApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.sharesheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,7 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.nowENT.LinkShareAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,7 +675,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.nowENT.LinkShareAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,6 +720,66 @@
 			};
 			name = Release;
 		};
+		22D250762A8235EE00E1267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LinkShareExtension/LinkShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY583C3M59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Link Preview";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.sharesheet.ImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D250772A8235EE00E1267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LinkShareExtension/LinkShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY583C3M59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Link Preview";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdsol.sharesheet.ImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -595,7 +819,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		22D250752A8235EE00E1267B /* Build configuration list for PBXNativeTarget "LinkShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D250762A8235EE00E1267B /* Debug */,
+				22D250772A8235EE00E1267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22D250812A823B1500E1267B /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22D250822A823B1500E1267B /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22D250812A823B1500E1267B /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		22D250852A823B5500E1267B /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22D250812A823B1500E1267B /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22D2502B2A822F9600E1267B /* Project object */;
 }
