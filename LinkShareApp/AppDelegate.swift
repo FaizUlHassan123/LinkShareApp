@@ -44,54 +44,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
-extension AppDelegate {
-    
-    func application(_ app: UIApplication,
-                     open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-        let userDefaults = UserDefaults(suiteName: "group.com.sdsol.sharesheet")
-        if let key = url.absoluteString.components(separatedBy: "=").last,
-           let sharedArray = userDefaults?.object(forKey: key) as? [String:Any] {
-            
-            var imageArray: [CellModel] = []
-            
-            for (_,imageData) in sharedArray.enumerated() {
-                if imageData.key == "image"{
-                    let a = imageData.value as! Data
-                    let model = CellModel(image:UIImage(data: a))
-                    imageArray.append(model)
-                    
-                }else if  imageData.key == "URL"{
-                    // 'str' contains the decoded string
-                    if  let string = imageData.value as? String, let url = URL(string: string) {
-                        let model = CellModel(url: url)
-                        imageArray.append(model)
-                    }
-                    //                    let model = CellModel(url: url)
-                }
-                
-            }
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            homeVC.cellItems = imageArray
-            
-            let navVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
-            
-            navVC.viewControllers = [homeVC]
-            self.window?.rootViewController = navVC
-            self.window?.makeKeyAndVisible()
-            
-            return true
-        }else if let key = url.absoluteString.components(separatedBy: "=").last,
-                 let sharedArray = userDefaults?.url(forKey: key) as? [Any] {
-            print("Url \(sharedArray)")
-        }
-        
-        return false
-    }
-    
-
-    
-}
+//IF you'r app version in less than 13 then you can uncomment the below code.
+//extension AppDelegate {
+//
+//    func application(_ app: UIApplication,
+//                     open url: URL,
+//                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//
+//        let userDefaults = UserDefaults(suiteName: "group.com.sdsol.sharesheet")
+//        if let key = url.absoluteString.components(separatedBy: "=").last,
+//           let sharedArray = userDefaults?.object(forKey: key) as? [String:Any] {
+//
+//            var imageArray: [CellModel] = []
+//
+//            for (_,imageData) in sharedArray.enumerated() {
+//                if imageData.key == "image"{
+//                    let a = imageData.value as! Data
+//                    let model = CellModel(image:UIImage(data: a))
+//                    imageArray.append(model)
+//
+//                }else if  imageData.key == "URL"{
+//                    // 'str' contains the decoded string
+//                    if  let string = imageData.value as? String, let url = URL(string: string) {
+//                        let model = CellModel(url: url)
+//                        imageArray.append(model)
+//                    }
+//                    //                    let model = CellModel(url: url)
+//                }
+//
+//            }
+//
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let homeVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//            homeVC.cellItems = imageArray
+//
+//            let navVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+//
+//            navVC.viewControllers = [homeVC]
+//            self.window?.rootViewController = navVC
+//            self.window?.makeKeyAndVisible()
+//
+//            return true
+//        }else if let key = url.absoluteString.components(separatedBy: "=").last,
+//                 let sharedArray = userDefaults?.url(forKey: key) as? [Any] {
+//            print("Url \(sharedArray)")
+//        }
+//
+//        return false
+//    }
+//
+//
+//
+//}

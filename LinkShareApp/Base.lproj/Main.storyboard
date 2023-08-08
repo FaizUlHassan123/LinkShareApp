@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" systemColor="tintColor"/>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a9i-5E-KxC">
-                                <rect key="frame" x="20" y="103" width="353" height="666"/>
+                                <rect key="frame" x="12" y="103" width="369" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="raY-yN-3I5">
                                     <size key="itemSize" width="128" height="128"/>
@@ -90,10 +90,10 @@
                         <viewLayoutGuide key="safeArea" id="y1n-jJ-8nx"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="y1n-jJ-8nx" firstAttribute="trailing" secondItem="a9i-5E-KxC" secondAttribute="trailing" constant="20" id="2Jh-kg-ZJX"/>
+                            <constraint firstItem="y1n-jJ-8nx" firstAttribute="trailing" secondItem="a9i-5E-KxC" secondAttribute="trailing" constant="12" id="2Jh-kg-ZJX"/>
                             <constraint firstItem="a9i-5E-KxC" firstAttribute="top" secondItem="y1n-jJ-8nx" secondAttribute="top" id="89T-eq-y77"/>
                             <constraint firstItem="y1n-jJ-8nx" firstAttribute="bottom" secondItem="a9i-5E-KxC" secondAttribute="bottom" id="8ab-dG-0S0"/>
-                            <constraint firstItem="a9i-5E-KxC" firstAttribute="leading" secondItem="y1n-jJ-8nx" secondAttribute="leading" constant="20" id="9Q8-id-anO"/>
+                            <constraint firstItem="a9i-5E-KxC" firstAttribute="leading" secondItem="y1n-jJ-8nx" secondAttribute="leading" constant="12" id="9Q8-id-anO"/>
                             <constraint firstItem="y1n-jJ-8nx" firstAttribute="bottom" secondItem="2xQ-XC-y1d" secondAttribute="bottom" constant="20" id="LNy-Le-9EE"/>
                             <constraint firstItem="2xQ-XC-y1d" firstAttribute="leading" secondItem="kQs-PD-Xfr" secondAttribute="leadingMargin" id="Y3e-vQ-oCn"/>
                             <constraint firstItem="2xQ-XC-y1d" firstAttribute="top" secondItem="y1n-jJ-8nx" secondAttribute="top" id="fbT-25-naa"/>
